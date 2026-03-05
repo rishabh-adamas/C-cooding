@@ -1,19 +1,16 @@
 #include <stdio.h>
-#include<stdbool.h>
-int main() {
-    int x;
-    bool flag = true;
-    printf("enter any number: ");
+int main(){
+    int i,x;
+    printf("enter x: ");
     scanf("%d",&x);
-    for(int i=2;i<x;i++){
-        if ((x%i) ==0){
-            flag = false;
-            printf("%d is not a prime number",x);
-            break;
+    for(i=2;i<x;i++){
+        if((x%i)==0){
+            printf("not a prime number");
+            break;}
         }
-    }
-    if(flag){
-        printf("%d is a prime number",x);
-    }
+    if(x==i){
+            printf("prime number");
+        }
+    
     return 0;
 }
